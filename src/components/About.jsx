@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white "
     >
       <div className="max-w-4xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -14,13 +14,11 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-          You have been looking for a Web developer who is able to deliver you
-          the best. I consider myself as the right choice for you because I have
-          the right skills and potentiality to match your needs. I am an
-          established Web Developer and additionally a graduate in Sistem
-          Information. Through hard work I have gained some excellent skills in
-          Web Development. So, I want to explore the vast possibilities in Web
-          Development.
+          I want to make this simple. I studied Information Systems and gained
+          very good knowledge in Programming, IT and management. It all started
+          when I saw how technology is moving forward. Through hard work I have
+          gained some excellent skills in Web Development. So, I want to explore
+          the vast possibilities in Web Development.
         </p>
 
         <br />

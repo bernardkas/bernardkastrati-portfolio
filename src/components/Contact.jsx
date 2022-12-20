@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-80 "
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
@@ -14,11 +14,11 @@ const Contact = () => {
           <p className="py-6">Submit form below to get in touch with me</p>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-left items-center">
           <form
             action="https://getform.io/f/dc21603c-0d5b-4629-917a-59313dc72e00"
             method="POST"
-            className="flex flex-col  w-full md:w-1/2"
+            className="flex flex-col  w-full md:w-3/4"
           >
             <input
               type="text"
@@ -38,7 +38,6 @@ const Contact = () => {
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
-
             <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-5 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>

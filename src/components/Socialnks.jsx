@@ -14,7 +14,7 @@ const Socialnks = () => {
           </>
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/bernard-kastrati-584a95223/",
       style: "rounded-tr-md",
     },
     {
@@ -37,21 +37,21 @@ const Socialnks = () => {
           </>
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:berni.kastrati@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          <>
-            Resume <BsFillPersonLinesFill size={30} />
-          </>
-        </>
-      ),
-      href: "/bernardkastratiCV.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       <>
+    //         Resume <BsFillPersonLinesFill size={30} />
+    //       </>
+    //     </>
+    //   ),
+    //   href: "/bernardkastratiCV.pdf",
+    //   style: "rounded-br-md",
+    //   download: true,
+    // },
   ];
 
   return (

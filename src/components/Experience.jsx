@@ -4,11 +4,14 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
+import github from "../assets/git.png";
 import tailwind from "../assets/tailwind.png";
 import csharp from "../assets/csharp.png";
 import python from "../assets/python.png";
 import sass from "../assets/sass.png";
+import graphql from "../assets/graphql.png";
+import nextjs from "../assets/nextjs.png";
+import mysql from "../assets/mysql.png";
 
 const Experience = () => {
   const techs = [
@@ -21,7 +24,7 @@ const Experience = () => {
     {
       id: 2,
       src: css,
-      title: "HTML",
+      title: "CSS",
       style: "shadow-blue-500",
     },
     {
@@ -39,8 +42,8 @@ const Experience = () => {
     {
       id: 5,
       src: github,
-      title: "Github",
-      style: "shadow-gray-500",
+      title: "Git",
+      style: "shadow-gray-500 pt-8",
     },
     {
       id: 6,
@@ -66,13 +69,31 @@ const Experience = () => {
       title: "SASS",
       style: "shadow-pink-700",
     },
+    {
+      id: 10,
+      src: graphql,
+      title: "GraphQL",
+      style: "shadow-pink-700",
+    },
+    {
+      id: 11,
+      src: nextjs,
+      title: "NextJs",
+      style: "shadow-gray-700",
+    },
+    {
+      id: 12,
+      src: mysql,
+      title: "SQL",
+      style: "shadow-orange-700",
+    },
   ];
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen "
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white ">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
