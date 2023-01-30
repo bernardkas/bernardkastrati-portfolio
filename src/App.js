@@ -31,7 +31,7 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className="scroll-m-0">
       <NavBar links={links} />
       <Home links={links} />
       <About />
