@@ -7,6 +7,7 @@ import project5 from "../assets/portfolio/garden.png";
 import project6 from "../assets/portfolio/csharp.jpg";
 import project7 from "../assets/portfolio/note.png";
 import project8 from "../assets/portfolio/tic-tac-toe.gif";
+import project9 from "../assets/portfolio/ik-hausbetreuung.gif";
 
 const Portfolio = () => {
   const portfolios = [
@@ -49,6 +50,11 @@ const Portfolio = () => {
       id: 8,
       src: project8,
       href: "https://github.com/bernardkas/tictactoe",
+    },
+    {
+      id: 9,
+      src: project9,
+      href: "https://ik-hausbetreuung.at/",
     },
   ];
 

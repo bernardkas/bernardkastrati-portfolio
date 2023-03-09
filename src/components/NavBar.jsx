@@ -4,10 +4,10 @@ import { Link } from "react-scroll";
 
 const NavBar = ({ links }) => {
   const [nav, setNav] = useState(false);
-  console.log(nav);
+  // console.log(nav);
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
       <div>
         <h1 className="text-5xl font-signature ml-2">Bernardii</h1>
       </div>
