@@ -34,7 +34,7 @@ const About = () => {
           "w-full h-screen d-flex justify-center align-middle bg-gradient-to-b from-gray-700 to-black text-white"
         }
         style={{
-          clipPath: scrollYProgress.to((val) => `circle(${val * 250}%)`),
+          clipPath: scrollYProgress.to((val) => `circle(${val * 300}%)`),
         }}
       >
         <div
