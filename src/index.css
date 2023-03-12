@@ -51,11 +51,21 @@
   height: 100%;
 }
 
+.modal .modal-content .title {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Golos Text", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .modal {
     /* width: 100vh; */
     position: fixed;
-    top: 58%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;

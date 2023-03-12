@@ -8,6 +8,7 @@ import project6 from "./assets/portfolio/csharp.jpg";
 import project7 from "./assets/portfolio/note.png";
 import project8 from "./assets/portfolio/tic-tac-toe.gif";
 import project9 from "./assets/portfolio/ik-hausbetreuung.gif";
+import other from "./assets/portfolio/other.png";
 
 // Video Path
 import smartEngineering from "./assets/video/smart-engineering.tech.mp4";
@@ -113,5 +114,10 @@ export const portfolios = [
     id: 9,
     src: project9,
     href: "https://ik-hausbetreuung.at/",
+  },
+  {
+    id: 10,
+    src: other,
+    href: "https://github.com/bernardkas?tab=repositories",
   },
 ];

@@ -33,32 +33,47 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:px-8 md:pl-0 md:pr-60 sm:p-0 md:p-20 lg:px-20 column-gap sm:gap-x-80 md:gap-x-50 lg:gap-x-20 gap-8 text-center justify-center">
           {/* <div className="flex justify-between flex-wrap px-12 sm:px-0 p-20"> */}
-          {portfolios.map(({ id, src, href }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg h-72 w-80 cursor-pointer"
-            >
-              <img
+          {portfolios.map(({ id, src, href }) =>
+            id !== 10 ? (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg h-72 w-80 cursor-pointer"
                 onClick={() => handlePortfolioClick(id)}
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105 h-4/5 w-80"
-              />
-              <div className="flex items-center justify-center ">
-                {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button> */}
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-2/3 px-6 py-3 pb-3 m-4 duration-200 hover:scale-105 text-center"
-                >
-                  Check it out
-                </a>
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105 h-4/5 w-80"
+                />
+                <div className="flex items-center justify-center ">
+                  <p className="w-2/3 px-6 py-3 pb-3 m-4 duration-200 hover:scale-105 text-center">
+                    Check it out
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ) : (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg h-72 w-80 cursor-pointer"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105 h-4/5 w-80"
+                />
+                <div className="flex items-center justify-center ">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-2/3 px-6 py-3 pb-3 m-4 duration-200 hover:scale-105 text-center text-lg"
+                  >
+                    Have a look 😄
+                  </a>
+                </div>
+              </div>
+            )
+          )}
         </div>
       </div>
       {openVideoModal && (

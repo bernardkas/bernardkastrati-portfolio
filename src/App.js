@@ -31,14 +31,16 @@ function App() {
   ];
 
   return (
-    <div className="scroll-m-0">
-      <NavBar links={links} />
-      <Home links={links} />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Socialnks />
+    <div>
+      <div className="scroll-m-0">
+        <NavBar links={links} />
+        <Home links={links} />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <Socialnks />
+      </div>
     </div>
   );
 }
