@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
 import HeroImage from "../assets/heroImage.jpg";
-import {
-  // MdOutlineKeyboardArrowDown,
-  MdOutlineKeyboardArrowRight,
-} from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import "./global.css";
+
+import EarthCanvas from "./planet/Earth";
 
 const Home = ({ links }) => {
   const test = useRef((el) => el.getBoundingClientRect().height, []);
@@ -25,7 +24,7 @@ const Home = ({ links }) => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-2 md:flex-row">
         <div className="flex flex-col justify-center h-full mr-7">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-3xl sm:text-7xl font-bold text-white">
             I'm a <span className="frontSpan"> Front</span> End Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
@@ -50,12 +49,13 @@ const Home = ({ links }) => {
           </div>
         </div>
 
-        <div>
-          <img
+        <div className="flex flex-col justify-center h-2/3 w-auto sm:w-3/4 mr-7">
+          {/* <img
             src={HeroImage}
             alt="My profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full image"
-          />
+          /> */}
+          <EarthCanvas />
         </div>
       </div>
     </div>

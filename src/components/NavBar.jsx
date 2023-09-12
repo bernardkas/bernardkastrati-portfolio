@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import logo from "../assets/logo.png";
 
 const NavBar = ({ links }) => {
   const [nav, setNav] = useState(false);
   // console.log(nav);
 
+  const home = links.map((item) => item).find((el) => el.link === "home");
+
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Bernardii</h1>
+        <Link className="cursor-pointer" to={home.link} smooth duration={500}>
+          <img alt="logo" className="" src={logo}></img>
+        </Link>
       </div>
 
       <ul className="hidden md:flex">

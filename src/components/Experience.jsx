@@ -12,6 +12,7 @@ import sass from "../assets/sass.png";
 import graphql from "../assets/graphql.png";
 import nextjs from "../assets/nextjs.png";
 import mysql from "../assets/mysql.png";
+import typescript from "../assets/typescript.png";
 
 const Experience = () => {
   const techs = [
@@ -86,6 +87,12 @@ const Experience = () => {
       src: mysql,
       title: "SQL",
       style: "shadow-orange-700",
+    },
+    {
+      id: 13,
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-700",
     },
   ];
   return (

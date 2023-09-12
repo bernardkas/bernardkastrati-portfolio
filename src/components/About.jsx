@@ -6,16 +6,16 @@ const About = () => {
   const containerRef = React.useRef(null);
 
   const [textStyles, textApi] = useSpring(() => ({
-    y: "100%",
+    opacity: 0, // Use opacity to control visibility
   }));
 
   const { scrollYProgress } = useScroll({
     container: containerRef,
     onChange: ({ value: { scrollYProgress } }) => {
-      if (scrollYProgress > 1) {
-        textApi.start({ y: "0%" });
+      if (scrollYProgress > 0.5) { // Adjust this threshold as needed
+        textApi.start({ opacity: 1 });
       } else {
-        textApi.start({ y: "100%" });
+        textApi.start({ opacity: 0 });
       }
     },
     default: {
@@ -23,8 +23,10 @@ const About = () => {
     },
   });
 
+  console.log('scrrol', scrollYProgress);
   return (
     <div
+      ref={containerRef}
       name="about"
       className="w-full h-screen d-flex justify-center align-middle bg-gradient-to-b from-gray-800 to-black text-white"
       id="about"
@@ -33,9 +35,7 @@ const About = () => {
         className={
           "w-full h-screen d-flex justify-center align-middle bg-gradient-to-b from-gray-700 to-black text-white"
         }
-        style={{
-          clipPath: scrollYProgress.to((val) => `circle(${val * 310}%)`),
-        }}
+        style={{opacity: textStyles.opacity}}
       >
         <div
           style={textStyles}
@@ -48,20 +48,13 @@ const About = () => {
           </div>
 
           <p className="text-xl mt-20">
-            I want to make this simple. I studied Information Systems and gained
-            very good knowledge in Programming, IT and management. It all
-            started when I saw how technology is moving forward. Through hard
-            work I have gained some excellent skills in Web Development. So, I
-            want to explore the vast possibilities in Web Development.
+          I am a web developer with a Bachelor's degree in Information Systems and over 1 year of professional experience. I'm passionate about creating user-friendly websites and have a knack for turning ideas into elegant web applications. With a strong foundation in Information Systems, I excel in collaborative environments and am committed to staying up-to-date with the latest web development trends. My goal is to continue crafting innovative web solutions that make a meaningful impact.
           </p>
 
           <br />
 
           <p className="text-xl">
-            I would like to inform you also that I am highly skilled with HTML,
-            CSS, JavaScrip, React.js C# and python as I have handsome experience
-            with them. Still, I am always eager to learn anew and make my skill
-            sharper whenever I get any chance.
+          If you're seeking a passionate coder who can transform ideas into reality, don't hesitate to reach out. Let's collaborate and craft something extraordinary together!
           </p>
         </div>
       </animated.div>

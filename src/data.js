@@ -1,13 +1,14 @@
 // Photo and gif path portfolio
 import project1 from "./assets/portfolio/smart-engineering.png";
 import project2 from "./assets/portfolio/spacex-missions.gif";
-import project3 from "./assets/portfolio/box-office.gif";
+import project3 from "./assets/portfolio/box-office.png";
 import project4 from "./assets/portfolio/servisimi.png";
 import project5 from "./assets/portfolio/garden.png";
 import project6 from "./assets/portfolio/csharp.jpg";
 import project7 from "./assets/portfolio/note.png";
 import project8 from "./assets/portfolio/tic-tac-toe.gif";
-import project9 from "./assets/portfolio/ik-hausbetreuung.gif";
+import project9 from "./assets/portfolio/ik-hausbetreuung.png";
+import project10 from "./assets/portfolio/kerkomjeshterin.png";
 import other from "./assets/portfolio/other.png";
 
 // Video Path
@@ -117,6 +118,11 @@ export const portfolios = [
   },
   {
     id: 10,
+    src: project10,
+    href: "https://www.kerkomjeshterin.com/",
+  },
+  {
+    id: 11,
     src: other,
     href: "https://github.com/bernardkas?tab=repositories",
   },

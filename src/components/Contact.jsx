@@ -35,8 +35,8 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Message"
-              rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              rows="15"
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none h-1/2 sm: h-auto"
             ></textarea>
             <button
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-5 py-3 
