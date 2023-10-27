@@ -31,8 +31,8 @@ const Portfolio = () => {
           <p className="py-6">Check Out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:px-8 md:pl-0 md:pr-60 sm:p-0 md:p-20 lg:px-20 column-gap sm:gap-x-80 md:gap-x-50 lg:gap-x-20 gap-8 text-center justify-center">
-          {/* <div className="flex justify-between flex-wrap px-12 sm:px-0 p-20"> */}
+        {/* <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:px-8 md:pl-0 md:pr-60 sm:p-0 md:p-20 lg:px-20 column-gap sm:gap-x-80 md:gap-x-50 lg:gap-x-20 gap-8 text-center justify-center"> */}
+          <div className="flex justify-center md:justify-start flex-wrap px-12 sm:px-0 gap-2">
           {portfolios.map(({ id, src, href }) =>
             id !== 10 ? (
               <div

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-80 "
+      className="w-full h-full md:h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-2 md:pt-80 "
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
@@ -14,7 +14,7 @@ const Contact = () => {
           <p className="py-6">Submit form below to get in touch with me</p>
         </div>
 
-        <div className="flex justify-left items-center h-5/6">
+        <div className="flex justify-left items-center h-full md:h-5/6 ">
           <form
             action="https://getform.io/f/dc21603c-0d5b-4629-917a-59313dc72e00"
             method="POST"
@@ -36,7 +36,7 @@ const Contact = () => {
               name="message"
               placeholder="Message"
               rows="15"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none h-1/2 sm: h-auto"
+              className="p-2 bg-transparent border-2 rounded-md resize-none text-white focus:outline-none h-[200px] sm:h-auto "
             ></textarea>
             <button
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-5 py-3 
