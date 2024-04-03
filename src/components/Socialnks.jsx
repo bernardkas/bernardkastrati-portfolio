@@ -1,7 +1,7 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Socialnks = () => {
   const links = [
@@ -14,8 +14,8 @@ const Socialnks = () => {
           </>
         </>
       ),
-      href: "https://www.linkedin.com/in/bernard-kastrati-584a95223/",
-      style: "rounded-tr-md",
+      href: 'https://www.linkedin.com/in/bernard-kastrati-584a95223/',
+      style: 'rounded-tr-md',
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Socialnks = () => {
           </>
         </>
       ),
-      href: "https://github.com/bernardkas",
+      href: 'https://github.com/bernardkas',
     },
     {
       id: 3,
@@ -37,42 +37,40 @@ const Socialnks = () => {
           </>
         </>
       ),
-      href: "mailto:berni.kastrati@gmail.com",
+      href: 'mailto:berni.kastrati@gmail.com',
     },
-    // {
-    //   id: 4,
-    //   child: (
-    //     <>
-    //       <>
-    //         Resume <BsFillPersonLinesFill size={30} />
-    //       </>
-    //     </>
-    //   ),
-    //   href: "/bernardkastratiCV.pdf",
-    //   style: "rounded-br-md",
-    //   download: true,
-    // },
+    {
+      id: 4,
+      child: (
+        <>
+          <>
+            Resume <BsFillPersonLinesFill size={30} />
+          </>
+        </>
+      ),
+      href: '',
+      style: 'rounded-br-md',
+      download: true,
+    },
   ];
 
   return (
-    <div className=" hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className=' hidden lg:flex flex-col top-[35%] left-0 fixed'>
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" +
-              " " +
+              'flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300' +
+              ' ' +
               style
-            }
-          >
+            }>
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className='flex justify-between items-center w-full text-white'
               download={download}
-              target="_blank"
-              rel="noreferrer"
-            >
+              target='_blank'
+              rel='noreferrer'>
               {child}
             </a>
           </li>

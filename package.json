@@ -1,8 +1,9 @@
 {
   "name": "react-app-portfolio",
   "version": "0.1.0",
-  "homepage": "http://bernardkas.tech",
+  "homepage": "https://bernardkastrati.com",
   "private": true,
+  "start_url": "https://bernardkastrati.com/",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@testing-library/jest-dom": "^5.16.4",
