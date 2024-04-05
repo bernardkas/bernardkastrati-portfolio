@@ -39,19 +39,19 @@ const Socialnks = () => {
       ),
       href: 'mailto:berni.kastrati@gmail.com',
     },
-    {
-      id: 4,
-      child: (
-        <>
-          <>
-            Resume <BsFillPersonLinesFill size={30} />
-          </>
-        </>
-      ),
-      href: '',
-      style: 'rounded-br-md',
-      download: true,
-    },
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       <>
+    //         Resume <BsFillPersonLinesFill size={30} />
+    //       </>
+    //     </>
+    //   ),
+    //   href: '',
+    //   style: 'rounded-br-md',
+    //   download: true,
+    // },
   ];
 
   return (

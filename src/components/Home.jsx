@@ -42,13 +42,12 @@ const Home = ({ links }) => {
         <div className='flex flex-col justify-center h-full mr-7'>
           <div className=' flex flex-col justify-center flex-nowrap'>
             <h2 className='text-3xl md:text-6xl font-bold text-white  flex-col items-start gap-3 flex'>
-              I'm <span className='frontSpan'> Web</span>{' '}
+              I'm <span className='frontSpan'> Software</span>{' '}
               <span className=''>
                 <TypeAnimation
                   sequence={[
-                    // Same substring at the start will only be typed out once, initially
                     'Dev',
-                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    1000,
                     'Develop',
                     1000,
                     'Devel',
