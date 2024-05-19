@@ -7,6 +7,10 @@ const Portfolio = () => {
   const [activeVideo, setActiveVideo] = useState(0);
 
   const handlePortfolioClick = id => {
+    if (id === 10 || id === 11) {
+      setOpenVideoModal(false);
+      setActiveVideo(!id);
+    }
     setActiveVideo(id);
     setOpenVideoModal(true);
   };
@@ -28,21 +32,26 @@ const Portfolio = () => {
 
         {/* <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:px-8 md:pl-0 md:pr-60 sm:p-0 md:p-20 lg:px-20 column-gap sm:gap-x-80 md:gap-x-50 lg:gap-x-20 gap-8 text-center justify-center"> */}
         <div className='flex justify-center md:justify-start flex-wrap px-12 sm:px-0 gap-2'>
-          {portfolios.map(({ id, src, href }) =>
-            id !== 10 ? (
+          {portfolios?.map(({ id, src, href }) =>
+            id !== 12 ? (
               <div
                 key={id}
-                className='shadow-md shadow-gray-600 rounded-lg h-72 w-80 cursor-pointer'
-                onClick={() => handlePortfolioClick(id)}>
+                className='shadow-md shadow-gray-600 rounded-lg h-72 w-80 cursor-pointer'>
                 <img
+                  onClick={() => {
+                    handlePortfolioClick(id);
+                  }}
                   src={src}
                   alt=''
                   className='rounded-md duration-200 hover:scale-105 h-4/5 w-80'
                 />
                 <div className='flex items-center justify-center '>
-                  <p className='w-2/3 px-6 py-3 pb-3 m-4 duration-200 hover:scale-105 text-center'>
+                  <a
+                    href={href}
+                    target='_blank'
+                    className='w-2/3 px-6 py-3 pb-3 m-4 duration-200 hover:scale-105 text-center'>
                     Check it out
-                  </p>
+                  </a>
                 </div>
               </div>
             ) : (
