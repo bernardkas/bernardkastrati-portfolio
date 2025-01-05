@@ -120,12 +120,12 @@ export const portfolios = [
   {
     id: 10,
     src: project10,
-    href: 'https://www.kerkomjeshterin.com/',
+    href: 'https://www.kerkomjeshter.com/',
   },
   {
     id: 11,
     src: project11,
-    href: 'https://foundlostx.com/',
+    href: 'https://foundlostx.vercel.app/',
   },
   {
     id: 12,
